@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calculator">
+        <input type="text" name="result">
+        <span id="clear" name="clear" onclick="document.calculator.result.value = ''">CE</span>
+        <span name="/" onclick="document.calculator.result.value += '/'">/</span>
+        <span name="*" onclick="document.calculator.result.value += '*'">&times;</span>
+        <span name="7" onclick="document.calculator.result.value += '7'">7</span>
+        <span name="8" onclick="document.calculator.result.value += '8'">8</span>
+        <span name="9" onclick="document.calculator.result.value += '9'">9</span>
+        <span name="-" onclick="document.calculator.result.value += '-'">-</span>
+        <span name="4" onclick="document.calculator.result.value += '4'">4</span>
+        <span name="5" onclick="document.calculator.result.value += '5'">5</span>
+        <span name="6" onclick="document.calculator.result.value += '6'">6</span>
+        <span name="+" id="plus" onclick="document.calculator.result.value += '+'">+</span>
+        <span name="1" onclick="document.calculator.result.value += '1'">1</span>
+        <span name="2" onclick="document.calculator.result.value += '2'">2</span>
+        <span name="3" onclick="document.calculator.result.value += '3'">3</span>
+        <span name="0" onclick="document.calculator.result.value += '0'">0</span>
+        <span name="00" onclick="document.calculator.result.value += '00'">00</span>
+        <span name="." onclick="document.calculator.result.value += '.'">.</span>
+        <span name="=" onclick="document.calculator.result.value = eval(calculator.result.value)">=</span>
+    </form>
+</body>
+</html>
